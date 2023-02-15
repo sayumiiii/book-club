@@ -75,17 +75,17 @@ section{
     padding:.9rem 3rem;
     border-radius: .5rem;
     color:#fff;
-    background:var(--green);
+    background:#cdb201;
     font-size: 1.7rem;
     cursor: pointer;
     font-weight: 500;
 }
 
 .btn:hover{
-    background:var(--dark-color);
+    background:#4e4402;
 }
 
-.header .header-1{
+.header {
     background:#fff;
     padding:1.5rem 9%;
     display: flex;
@@ -93,84 +93,85 @@ section{
     justify-content: space-between;
 }
 
-.header .header-1 .logo{
+.logo{
     font-size: 2.5rem;
     font-weight: bolder;
     color:var(--black);
 }
 
-.header .header-1 .logo i{
-    color:var(--green);
+ .logo i{
+    color:#cdb201;
 }
 
-.header .header-1 .search-form{
-    width:50rem;
+header .search-form{
+    width:35%;
     height:5rem;
     border:var(--border);
     overflow: hidden;
     background:#fff;
     display:flex;
     align-items: center;
+    float: right;
     border-radius: .5rem;
 }
 
-.header .header-1 .search-form input{
+header .search-form input{
     font-size: 1.6rem;
     padding:0 1.2rem;
-    height:100%;
-    width:100%;
+    padding-right: .4em;
     text-transform: none;
     color:var(--black);
 }
 
-.header .header-1 .search-form label{
+header .search-form label{
     font-size: 2.5rem;
-    padding-right: 1.5rem;
+    padding-right: 0.5em;
     color:var(--black);
     cursor: pointer;
 }
 
-.header .header-1 .search-form label:hover{
-    color:var(--green);
+header .search-form label:hover{
+    color:#cdb201;
 }
 
-.header .header-1 .icons div,
-.header .header-1 .icons a{
+header .icons div,
+header .icons a{
     font-size: 2.5rem;
     margin-left: 1.5rem;
     color:var(--black);
     cursor: pointer;
 }
 
-.header .header-1 .icons div:hover,
-.header .header-1 .icons a:hover{
-    color:var(--green);
+header .icons div:hover,
+header .icons a:hover{
+    color:#cdb201;
 }
 
 #search-btn{
     display: none;
 }
 
-.header .header-2{
-    background:var(--green);
+.header {
+    background:#cdb201;
 }
 
-.header .header-2 .navbar{
+ .navbar{
     text-align: center;
 }
 
-.header .header-2 .navbar a{
-    color:#fff;
+.navbar a{
+    color:#941f1f;
     display: inline-block;
+    text-decoration: solid;
     padding:1.2rem;
     font-size: 1.7rem;
 }
 
-.header .header-2 .navbar a:hover{
+  .navbar a:hover{
     background:var(--dark-color);
 }
 
-.header .header-2.active{
+.header .active{
     position:fixed;
     top:0; left:0; right:0;
     z-index: 1000;
@@ -179,7 +180,7 @@ section{
 
 .bottom-navbar{
     text-align: center;
-    background:var(--green);
+    background: #cdb201;
     position: fixed;
     bottom:0; left:0; right:0;
     z-index: 1000;
@@ -189,7 +190,7 @@ section{
 .bottom-navbar a{
     font-size: 2.5rem;
     padding:2rem;
-    color:#fff;
+    color:#cdb201;
 }
 
 .bottom-navbar a:hover{
@@ -272,7 +273,7 @@ section{
 }
 
 .login-form-container form p a{
-    color:var(--green);
+    color:#cdb201;
     text-decoration: underline;
 }
 
@@ -284,6 +285,213 @@ section{
     cursor: pointer;
 }
 
+.singup {
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    font-weight: bold;
+    font-size: x-large;
+    margin-top: 1.5em;
+  }
+  
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+    width: 300px;
+    flex-direction: column;
+    gap: 35px;
+    border-radius: 15px;
+    background: #e3e3e3;
+    box-shadow: 16px 16px 32px #c8c8c8,
+          -16px -16px 32px #fefefe;
+    border-radius: 8px;
+  }
+  
+  .inputBox,
+  .inputBox1 {
+    position: relative;
+    width: 250px;
+  }
+  
+  .inputBox input,
+  .inputBox1 input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #000;
+    font-size: 1em;
+    background: transparent;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transition: 0.1s;
+    border-bottom-left-radius: 8px;
+  }
+  
+  .inputBox span,
+  .inputBox1 span {
+    margin-top: 5px;
+    position: absolute;
+    left: 0;
+    transform: translateY(-4px);
+    margin-left: 10px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 12px;
+    color: #000;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    border-radius: 8px;
+  }
+  
+  .inputBox input:valid~span,
+  .inputBox input:focus~span {
+    transform: translateX(113px) translateY(-15px);
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background: #000;
+    letter-spacing: 0.2em;
+    color: #fff;
+    border: 2px;
+  }
+  
+  .inputBox1 input:valid~span,
+  .inputBox1 input:focus~span {
+    transform: translateX(156px) translateY(-15px);
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background: #000;
+    letter-spacing: 0.2em;
+    color: #fff;
+    border: 2px;
+  }
+  
+  .inputBox input:valid,
+  .inputBox input:focus,
+  .inputBox1 input:valid,
+  .inputBox1 input:focus {
+    border: 2px solid #000;
+    border-radius: 8px;
+  }
+  
+  .enter {
+    height: 45px;
+    width: 100px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 3em;
+  }
+  
+  .enter:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+
+  .login {
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    font-weight: bold;
+    font-size: x-large;
+  }
+  
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+    width: 300px;
+    flex-direction: column;
+    gap: 35px;
+    background: #e3e3e3;
+    box-shadow: 16px 16px 32px #c8c8c8,
+          -16px -16px 32px #fefefe;
+    border-radius: 8px;
+  }
+  
+  .inputBox {
+    position: relative;
+    width: 250px;
+  }
+  
+  .inputBox input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #000;
+    font-size: 1em;
+    background: transparent;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transition: 0.1s;
+    border-bottom-left-radius: 8px;
+  }
+  
+  .inputBox span {
+    margin-top: 5px;
+    position: absolute;
+    left: 0;
+    transform: translateY(-4px);
+    margin-left: 10px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 12px;
+    color: #000;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    border-radius: 8px;
+  }
+  
+  .inputBox input:valid~span,
+  .inputBox input:focus~span {
+    transform: translateX(113px) translateY(-15px);
+    font-size: 0.8em;
+    padding: 5px 10px;
+    background: #000;
+    letter-spacing: 0.2em;
+    color: #fff;
+    border: 2px;
+  }
+  
+  .inputBox input:valid,
+  .inputBox input:focus {
+    border: 2px solid #000;
+    border-radius: 8px;
+  }
+  
+  .enter {
+    height: 45px;
+    width: 100px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 1em;
+  }
+  
+  .enter:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+  
+  
 .home{
     background: url(../image/banner-bg.jpg) no-repeat;
     background-size: cover;
@@ -347,7 +555,7 @@ section{
 
 .icons-container .icons i{
     font-size: 3.5rem;
-    color:var(--green);
+    color:#cdb201;
 }
 
 .icons-container .icons h3{
@@ -406,7 +614,7 @@ section{
 }
 
 .featured .featured-slider .box .icons a:hover{
-    background:var(--green);
+    background:#cdb201;
     color:#fff;
 }
 
@@ -519,7 +727,7 @@ section{
 
 .arrivals .arrivals-slider .box .content .stars i{
     font-size: 1.5rem;
-    color:var(--green);
+    color:#cdb201;
 }
 
 .deal{
@@ -543,7 +751,7 @@ section{
 }
 
 .deal .content h3{
-    color:var(--green);
+    color:#cdb201;
     font-size: 2.5rem;
     padding-bottom: .5rem;
 }
@@ -597,7 +805,7 @@ section{
 
 .reviews .reviews-slider .box .stars i{
     font-size: 1.7rem;
-    color:var(--green);
+    color:#cdb201;
 }
 
 .blogs .blogs-slider .box{
@@ -661,7 +869,7 @@ section{
 }
 
 .footer .box-container .box a i{
-    color:var(--green);
+    color:#cdb201;
     padding-right: .5rem;
 }
 
@@ -684,7 +892,7 @@ section{
     line-height: 5rem;
     font-size: 2rem;
     color:#fff;
-    background:var(--green);
+    background:#cdb201;
     margin:0 .3rem;
     border-radius: 50%; 
 }
@@ -704,7 +912,7 @@ section{
 }
 
 .footer .credit span{
-    color:var(--green);
+    color:#cdb201;
 }
 
 .loader-container{
@@ -818,3 +1026,9 @@ section{
     }
 
 }
+
+
+
+
+
+

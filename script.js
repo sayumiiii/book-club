@@ -5,6 +5,7 @@ document.querySelector('#search-btn').onclick = () =>{
 }
 
 let loginForm = document.querySelector('.login-form-container');
+let SigninForm = document.querySelector('.signin-form-container');
 
 document.querySelector('#login-btn').onclick = () =>{
   loginForm.classList.toggle('active');
