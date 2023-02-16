@@ -63,11 +63,12 @@ section{
 .home .row .content h3 {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
-    color: #a71313;
+    color: #920000;
 }
 
 .heading span{
     display: block;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 7.5em;
     font-size: 3rem;
     padding:.5rem 2rem;
@@ -126,8 +127,17 @@ section{
 }
 
  .logo i{
-    color:#e3c504;
+    color:#f5d505;
     margin-right: 1.5rem;
+}
+
+.logo h1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    color: #e0a500;
+    background-color: #ffffff;
+    font-size: 1.5em;
 }
 
 header .search-form{
@@ -142,9 +152,11 @@ header .search-form{
     float: right;
     border-radius: .5rem;
 }
+
 .newsletter form .btn{
     background-color: #e3c504;
 }
+
 header .search-form input{
     font-size: 1.6rem;
     padding:0 1.2rem;
@@ -163,10 +175,12 @@ header .search-form label{
 header .search-form label:hover{
     color:#cdb201;
 }
+
 header .icons{
     margin-top: 1em;
     margin-right: 1em;
-    font-size: 2em;
+    margin-left: 3.5rem;
+    font-size: 2rem;
 }
 header .icons div,
 header .icons a{
@@ -191,21 +205,25 @@ p{
     background:#cdb201;
 }
 
- .navbar{
+.navbar{
     margin-left: 7rem;
-    margin-right: 7rem;
+    margin-right: 13rem;
+    padding-right: 2em;
     text-align: center;
 }
 
 .navbar a{
-    color:#941f1f;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 3em;
+    color:#d88d03;
     display: inline-block;
     text-decoration: solid;
-    padding:1.2rem;
+    padding:1.7rem;
     font-size: 1.7rem;
 }
 
-  .navbar a:hover{
+.navbar a:hover{
     color:#f5f5f5;
     background:#bfa604;
 }
@@ -216,7 +234,9 @@ p{
     z-index: 1000;
 
 }
-
+.featuredspan{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .bottom-navbar{
     text-align: center;
     background: #cdb201;
