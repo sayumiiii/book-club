@@ -552,7 +552,7 @@ p{
   
   
 .home{
-    background: url(../image/banner-bg.jpg) no-repeat;
+    background: url(image/banner-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -719,7 +719,7 @@ p{
 }
 
 .newsletter{
-    background:url(../image/letter-bg.jpg) no-repeat;
+    background:url(image/letter-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
