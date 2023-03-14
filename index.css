@@ -1352,6 +1352,11 @@ p{
     -webkit-animation: keyboard05 var(--duration) linear infinite;
     animation: keyboard05 var(--duration) linear infinite;
   }
+
+
+
+
+  
   
   @keyframes bounce05 {
     85%, 92%, 100% {
